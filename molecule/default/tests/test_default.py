@@ -8,6 +8,12 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 def test_hosts_file(host):
-    f = host.package('mdadm')
+    pkg = host.package('mdadm')
 
-    assert f.is_installed
+    assert pkg.is_installed
+
+
+def test_mount(host):
+    mount = host.mount_point("/srv")
+
+    assert mount.exists

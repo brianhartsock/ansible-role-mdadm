@@ -1,7 +1,9 @@
 ansible-role-mdadm
 =========
 
-Super simple role that installs mdadm.
+[![Build Status](https://travis-ci.org/brianhartsock/ansible-role-mdadm.svg?branch=master)](https://travis-ci.org/brianhartsock/ansible-role-mdadm)
+
+Super simple role that installs mdadm and mounts raid arrays.
 
 Requirements
 ------------
@@ -11,7 +13,15 @@ None
 Role Variables
 --------------
 
-None
+The only role variable for this repository is a list of mount points.
+
+```
+mdadm_mounts:
+  - path: /srv
+    src: /dev/md0
+    fstype: ext4
+
+```
 
 Dependencies
 ------------

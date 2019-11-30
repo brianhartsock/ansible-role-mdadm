@@ -2,3 +2,11 @@
 - name: Install mdadm
   apt:
     name: mdadm
+- name: Mount {{ item.path }}
+  mount:
+    path: '{{ item.path }}'
+    src: '{{ item.src }}'
+    fstype: '{{ item.fstype | default(none) }}'
+    opts: '{{ item.opts | default(omit) }}'
+    state: mounted
+  with_items: '{{ mdadm_mounts }}'

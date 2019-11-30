@@ -1,5 +1,11 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    mdadm_mounts:
+      - path: /srv
+        src: /home
+        fstype: none
+        opts: bind
   roles:
     - role: ansible-role-mdadm
