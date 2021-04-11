@@ -8,4 +8,4 @@
         fstype: none
         opts: bind
   roles:
-    - role: ansible-role-mdadm
+    - role: brianhartsock.mdadm

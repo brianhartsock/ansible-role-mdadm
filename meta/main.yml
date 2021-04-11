@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: mdadm
+  namespace: brianhartsock
   author: Brian Hartsock
   description: Ansible role for managing mdadm arrays.
   license: MIT
