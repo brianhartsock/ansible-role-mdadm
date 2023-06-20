@@ -7,5 +7,9 @@
         src: /home
         fstype: none
         opts: bind
+  pre_tasks:
+    - name: Update apt cache.
+      ansible.builtin.package:
+        update_cache: true
   roles:
     - role: brianhartsock.mdadm

@@ -1,8 +1,6 @@
 ansible-role-mdadm
 =========
 
-[![Build Status](https://travis-ci.org/brianhartsock/ansible-role-mdadm.svg?branch=master)](https://travis-ci.org/brianhartsock/ansible-role-mdadm)
-
 Super simple role that installs mdadm and mounts raid arrays.
 
 Requirements
