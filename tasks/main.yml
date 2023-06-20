@@ -1,9 +1,9 @@
 ---
 - name: Install mdadm
-  apt:
+  ansible.builtin.apt:
     name: mdadm
 - name: Mount {{ item.path }}
-  mount:
+  ansible.posix.mount:
     path: '{{ item.path }}'
     src: '{{ item.src }}'
     fstype: '{{ item.fstype | default(none) }}'
