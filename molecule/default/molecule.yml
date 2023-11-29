@@ -7,9 +7,6 @@ platforms:
   - name: bionic
     image: ubuntu:18.04
     privileged: true
-  - name: xenial
-    image: ubuntu:16.04
-    privileged: true
 provisioner:
   name: ansible
 verifier:
