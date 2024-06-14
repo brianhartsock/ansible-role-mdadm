@@ -18,7 +18,6 @@ galaxy_info:
   platforms:
   - name: Ubuntu
     versions:
-    - bionic
     - focal
     - jammy
     - noble
