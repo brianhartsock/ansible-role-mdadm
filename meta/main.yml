@@ -1,3 +1,4 @@
+---
 galaxy_info:
   role_name: mdadm
   namespace: brianhartsock
@@ -16,11 +17,11 @@ galaxy_info:
   # https://galaxy.ansible.com/api/v1/platforms/
   #
   platforms:
-  - name: Ubuntu
-    versions:
-    - focal
-    - jammy
-    - noble
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+        - noble
 
   galaxy_tags:
     - ubuntu
