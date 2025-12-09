@@ -4,9 +4,6 @@ dependency:
 driver:
   name: docker
 platforms:
-  - name: focal
-    image: ubuntu:20.04
-    privileged: true
   - name: jammy
     image: ubuntu:22.04
     privileged: true
