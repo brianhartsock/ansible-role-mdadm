@@ -7,7 +7,7 @@ Super simple role that installs mdadm and mounts raid arrays.
 Requirements
 ------------
 
-This role has been tested on Ubuntu 20.04, 22.04, and 24.04, however it should work on most Debian systems.
+This role has been tested on Ubuntu 22.04, and 24.04, however it should work on most Debian systems.
 
 
 Role Variables
