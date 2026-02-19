@@ -1,3 +1,4 @@
 .ansible/
+.claude/settings.local.json
 .venv/
 *.retry
