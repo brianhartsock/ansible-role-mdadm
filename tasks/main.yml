@@ -2,11 +2,13 @@
 - name: Install mdadm
   ansible.builtin.apt:
     name: mdadm
-- name: Mount {{ item.path }}
+- name: Mount RAID arrays
   ansible.posix.mount:
     path: '{{ item.path }}'
     src: '{{ item.src }}'
     fstype: '{{ item.fstype | default(none) }}'
     opts: '{{ item.opts | default(omit) }}'
     state: mounted
-  with_items: '{{ mdadm_mounts }}'
+  loop: '{{ mdadm_mounts }}'
+  loop_control:
+    label: '{{ item.path }}'
