@@ -5,7 +5,7 @@ galaxy_info:
   author: Brian Hartsock
   description: Ansible role for managing mdadm arrays.
   license: MIT
-  min_ansible_version: "2.9"
+  min_ansible_version: "2.18"
 
   # If this a Container Enabled role, provide the minimum Ansible Container version.
   # min_ansible_container_version:
